@@ -78,7 +78,7 @@
               <h1 class="judul">{{ $post->judul }}</h1>
               <br>
               <div class="gmbr">
-                  <img src="https://ceritakita.herokuapp.com/{{ Storage::url($post->file_gambar) }}" class="center rounded gambar_detail" style="width:40%">
+                  <img src="{{ Storage::url($post->file_gambar) }}" class="center rounded gambar_detail" style="width:40%">
               </div>
               <br>
               <div class="col-sm-8 container">
