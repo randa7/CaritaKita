@@ -42,7 +42,7 @@
         @foreach ($post as $p)
             <div class="col-sm-4">
                 <div class="card tiap spasi">
-                    <img class="gambar_post" src="{{ Storage::url($p->file_gambar) }}" alt="gambar {{ $p->judul }}">
+                    <img class="gambar_post" src="https://ceritakita.herokuapp.com/{{ Storage::url($p->file_gambar) }}" alt="gambar {{ $p->judul }}">
                     <div class="card-body text">
                         <h5 class="card-title judul_post">{{ $p->judul }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Kategori : {{ $p->kategori->nama }}</h6>
