@@ -50,7 +50,7 @@ Route::middleware('penulis')->group(function () {
     Route::get('/cetak/{idpost}', [PostinganPenulisController::class, 'generatePDF']);
 });
 
-Route::get('/logout', function () {
+Route::get('/logout', function (){
     auth()->logout();
     return redirect('/');
 });
@@ -78,4 +78,5 @@ Route::middleware('admin')->group(function () {
     Route::get('/admin/hapus_kategori/{idkategori}', [DataKategoriController::class, 'hapusKategori']);
     Route::get('/admin/data_penulis/export', [DashboardAdminController::class, 'export']);
 
+    Route::get('/system/linkStorage', 'DashboardAdminController@linkStorage')->name('system.linkStorage');
 });

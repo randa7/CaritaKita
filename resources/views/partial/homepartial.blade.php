@@ -358,8 +358,6 @@
         @guest
           <li>
             <a class="btn btn-danger tombol" href="{{ url('/daftar') }}">Daftar</a>
-          </li>
-          <li>
             <a class="btn btn-info tombol2" href="{{ url('/login') }}">Login</a>
           </li>
         @endguest

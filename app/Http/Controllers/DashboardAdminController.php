@@ -80,4 +80,12 @@ class DashboardAdminController extends Controller
         $user->save();
         return redirect('/admin/data_penulis');
     }
+
+    public function linkStorage()
+    {
+        Artisan::call('storage:link');
+
+        return back()->with('status', 'Storage linked');
+    }
+    
 }
