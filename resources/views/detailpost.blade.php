@@ -52,6 +52,7 @@
 }
 
 @media (max-width: 575.98px) { 
+
   .center{
     margin-left: 0%;
   }

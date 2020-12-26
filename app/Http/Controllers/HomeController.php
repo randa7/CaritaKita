@@ -15,6 +15,8 @@ class HomeController extends Controller
         $post = Post::all();
         $kategori = Kategori::all();
 
+        $post = $post->reverse();
+
         return view('home', compact('post', 'kategori'));
     }
 
